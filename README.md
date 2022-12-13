@@ -8,19 +8,19 @@ This collection of files contain datasets for 6 languages (Russian, Basque, Turk
 
 
 ## File source
-The source of our files are the CoNLL-U format files presented in the SIGMORPHON 2019 Shared task \ref. They contain annotated phrases, where each word is annotated with all corresponding morphological information. During the preprocessing we extract only the wordforms, corresponding lemmas and morphological information necessary to form the certain label. 
+The source of our files are the CoNLL-U format files presented in the SIGMORPHON 2019 Shared task \ref. They contain annotated phrases, where each word is annotated with all corresponding morphological information. During the preprocessing we extract only the wordforms, corresponding lemmas and morphological information necessary to form each label. 
 
 ## Label structure
 In order to create the labels, we address the Unimorph schema \ref. We form labels of different morphological complexity: \
 **UPOS** label: includes only word´s postag; \
-**UPOS+Case+Gender**: includes postag, Case and Gender information of the word \
-**UPOS+Case+Number**: includes postag, Case and Number information of the word. Example: ADP \
-**UPOS+Case+Gender+Number**:  includes postag, Case and Number information of the word\
-**UPOS+AllFeat.ordered**: includes all the morphological information of the word in the following order: postag, ..., rest of the features\
-**UPOS+AllFeatNotOrdered**: includes all the morphological information in the way it is presented in the original file \
+**UPOS+Case+Gender**: includes postag, case and gender information of the word \
+**UPOS+Case+Number**: includes postag, case and number information of the word \
+**UPOS+Case+Gender+Number**:  includes postag, case and number information of the word \
+**UPOS+AllFeaturesOrdered**: includes all the morphological information of the word in the following order: postag, case, gender, number, rest of the features \
+**UPOS+AllFeaturesNotOrdered**: includes all the morphological information in the way it is presented in the original file \
 
 ## File format
 The files have the following format: \\
 word \t label \t lemma \
-
-Each new phrase is divided by an empty line, mantaining the CoNLL-U file format.
+Each new phrase is divided by an empty line, mantaining the CoNLL-U file format \
+There are files for training and further evaluation out-of-domain. For training there are 3 files (train, dev, and test) and there is a test file for evaluation for each of the languages.
