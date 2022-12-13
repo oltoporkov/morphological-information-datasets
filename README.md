@@ -22,4 +22,4 @@ In order to create the labels, we address the Unimorph schema \ref. We form labe
 The files have the following format:
 word \t label \t lemma
 
-Each new phrase is divided by an empty line, mantaining the CoNLLU file format.
+Each new phrase is divided by an empty line, mantaining the CoNLL-U file format.
