@@ -8,16 +8,16 @@ This collection of files contain datasets for 6 languages (Russian, Basque, Turk
 
 
 ## File source
-The source of our files are the CoNLL-U format files presented in the SIGMORPHON 2019 Shared task \ref. They contain annotated phrases, where each word is annotated with all corresponding morphological information. During the preprocessing we extract only the wordforms, corresponding lemmas and morphological information necessary to form each label. 
+The source of our files are the CoNLL-U format files presented in the [SIGMORPHON 2019 Shared task](https://sigmorphon.github.io/sharedtasks/2019/task2/). They contain annotated phrases, where each word is annotated with all corresponding morphological information. During the preprocessing we extract only the wordforms, corresponding lemmas and morphological information necessary to form each label. 
 
 ## Label structure
-In order to create the labels, we address the Unimorph schema \ref. We form labels of different morphological complexity: \
+In order to create the labels, we address the [Unimorph schema](https://unimorph.github.io/doc/unimorph-schema.pdf). We form labels of different morphological complexity: \
 **UPOS** label: includes only word´s postag; \
 **UPOS+Case+Gender**: includes postag, case and gender information of the word \
 **UPOS+Case+Number**: includes postag, case and number information of the word \
 **UPOS+Case+Gender+Number**:  includes postag, case and number information of the word \
 **UPOS+AllFeaturesOrdered**: includes all the morphological information of the word in the following order: postag, case, gender, number, rest of the features \
-**UPOS+AllFeaturesNotOrdered**: includes all the morphological information in the way it is presented in the original file \
+**UPOS+AllFeaturesNotOrdered**: includes all the morphological information in the way it is presented in the original file 
 
 ## File format
 The files have the following format: \\
