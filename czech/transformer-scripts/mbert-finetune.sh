@@ -9,14 +9,14 @@ export SEED=1
 export EPOCHS=20
 export TRANSFORMER_BASE_DIR=bert-base-multilingual-cased
 export CORPUS_DIR=./
-export RESULTS_DIR="model-mbert-all-labels-test-cz-e"$EPOCHS""
+export RESULTS_DIR="model-mbert-all-labels-test-cs-e"$EPOCHS""
 
 for i in 1
 
 do
   mkdir $RESULTS_DIR-$i
-  python /tartalo03/users/ragerri/pythoncode/transformers-training-scripts/run_conll_ner.py --data_dir=$CORPUS_DIR  \
-    --labels ./cz-all-labels.txt \
+  python ../run_conll_ner.py --data_dir=$CORPUS_DIR  \
+    --labels ./cs-all-labels.txt \
     --model_type bert \
     --model_name_or_path $TRANSFORMER_BASE_DIR \
     --output_dir=$RESULTS_DIR-$i \
