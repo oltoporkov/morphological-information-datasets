@@ -1,5 +1,5 @@
 # morphological-information-datasets
-This collection of files contain datasets for 6 languages (Russian, Basque, Turkish, Spanish, Czech and English) that include morphological labels of different complexity. These files are ready to use and are suitable for training with such systems as IXA pipes, Morpheus, Flair, as well as transfomer-based models. Apart from that, it also includes the scripts for the training of transformer-based models we used in our experiments (mBERT, XLM-RoBERTa and language-specific models) and the further out-of-domain evaluation of such models.
+This collection of files contains datasets for 6 languages (Russian, Basque, Turkish, Spanish, Czech and English) that include morphological labels of different complexity. These files are ready to use and are suitable for training with such systems as IXA pipes, Morpheus, Flair, as well as transfomer-based models. Apart from that, it also includes the scripts for the training of transformer-based models we used in our experiments (mBERT, XLM-RoBERTa and language-specific models) and the further out-of-domain evaluation of such models.
 
 ## Content
 1. [File source](#source)
