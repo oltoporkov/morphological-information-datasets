@@ -8,7 +8,6 @@ export SAVE_STEPS=0
 export SEED=1
 export EPOCHS=15
 export TRANSFORMER_BASE_DIR=DeepPavlov/rubert-base-cased
-#/tartalo03/lexiko-semantika/text-representation-models/basque/BERTeus_Pytorch
 export CORPUS_DIR=./
 export RESULTS_DIR="model-rubert-all-labels-test-ru"$EPOCHS
 
@@ -16,7 +15,7 @@ for i in 1
 
 do
   mkdir $RESULTS_DIR-$i
-  python /tartalo03/users/ragerri/pythoncode/transformers-training-scripts/run_conll_ner.py --data_dir=$CORPUS_DIR  \
+  python ../run_conll_ner.py --data_dir=$CORPUS_DIR  \
     --labels ./ru-all-labels.txt \
     --model_type bert \
     --model_name_or_path $TRANSFORMER_BASE_DIR \
