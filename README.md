@@ -1,5 +1,5 @@
 # morphological-information-datasets
-This collection of files contains datasets for 6 languages (Russian, Basque, Turkish, Spanish, Czech and English) that include morphological labels of different complexity. These files are ready to use and are suitable for training with such systems as IXA pipes, Morpheus, Flair and transfomer-based models. Apart from that, it also includes the scripts for training of the transformer-based models we used in our experiments (mBERT, XLM-RoBERTa and language-specific models) and the further out-of-domain evaluation of such models.
+This collection of files contains datasets for 6 languages (Russian, Basque, Turkish, Spanish, Czech and English) that include morphological labels of different complexity. These files are ready to use and are suitable for training with such systems as IXA pipes, Morpheus, Flair and transfomer-based models. Apart from that, it also includes the scripts for training transformer-based models we used in our experiments (mBERT, XLM-RoBERTa and language-specific models) and the further out-of-domain evaluation of such models.
 
 ## Content
 1. [File source](#source)
@@ -15,9 +15,9 @@ In order to create the labels, we address the [Unimorph schema](https://unimorph
 **UPOS** label: includes only word´s postag; \
 **UPOS+Case+Gender**: includes postag, case and gender information of the word \
 **UPOS+Case+Number**: includes postag, case and number information of the word \
-**UPOS+Case+Gender+Number**:  includes postag, case and number information of the word \
+**UPOS+Case+Gender+Number**:  includes postag, case, gender and number information of the word \
 **UPOS+AllFeaturesOrdered**: includes all the morphological information of the word in the following order: postag, case, gender, number, rest of the features \
-**UPOS+AllFeaturesNotOrdered**: includes all the morphological information in the way it is presented in the original file 
+**UPOS+AllFeaturesNotOrdered**: includes all the morphological information in the way it is presented in the original file. 
 
 ## File format
 The files with morphological labels have the following format: \
