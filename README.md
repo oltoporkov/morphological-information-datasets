@@ -1,5 +1,5 @@
 # morphological-information-datasets
-This collection of files contain datasets for 6 languages (Russian, Basque, Turkish, Spanish, Czech and English) that include morphological labels of different complexity. These files are ready to use and are suitable for training with such systems as IXA pipes, Morpheus, Flair and transfomer-based models.
+This collection of files contain datasets for 6 languages (Russian, Basque, Turkish, Spanish, Czech and English) that include morphological labels of different complexity. These files are ready to use and are suitable for training with such systems as IXA pipes, Morpheus, Flair, as well as transfomer-based models. Apart from that, it also includes the scripts for the training of transformer-based models we used in our experiments (mBERT, XLM-RoBERTa and language-specific models) and the further out-of-domain evaluation of such models.
 
 ## Content
 1. [File source](#source)
@@ -20,7 +20,10 @@ In order to create the labels, we address the [Unimorph schema](https://unimorph
 **UPOS+AllFeaturesNotOrdered**: includes all the morphological information in the way it is presented in the original file 
 
 ## File format
-The files have the following format: \\
+The files with morphological labels have the following format: \
 word \t label \t lemma \
+The files that contain the shortes edir scripts (SES) to train transformer-based models are presented in the format: \
+word \t SES \
 Each new phrase is divided by an empty line, mantaining the CoNLL-U file format \
-There are files for training and further evaluation out-of-domain. For training there are 3 files (train, dev, and test) and there is a test file for evaluation for each of the languages.
+There are files for training and further evaluation out-of-domain. As we also performed the training in the reversed setting, we provide train, dev and test files for both corpora for each presented language (except Basque, as there is only one available corpus in the CoNLL-U file format) \
+*-all-labels.txt files contain only one column with all the possible SES labels for transformer models' training, depending on the in-domain and out-of-domain corpora, which is specified in the file name itself.
