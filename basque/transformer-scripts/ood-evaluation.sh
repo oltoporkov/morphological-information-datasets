@@ -11,7 +11,7 @@ for i in 1
 
 do
 #mkdir $RESULTS_DIR-$i
-  python /tartalo03/users/ragerri/pythoncode/transformers-training-scripts/run_conll_ner.py --data_dir=$CORPUS_DIR  \
+  python ../run_conll_ner.py --data_dir=$CORPUS_DIR  \
     --labels eu-all-labels.txt \
     --model_type xlm-roberta \
     --model_name_or_path $TRANSFORMER_BASE_DIR \
