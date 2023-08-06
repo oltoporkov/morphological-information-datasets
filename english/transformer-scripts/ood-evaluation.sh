@@ -3,7 +3,7 @@
 export CUDA_VISIBLE_DEVICES=1
 
 ##directory that contains trained transformer model that we want to evaluate
-export TRANSFORMER_BASE_DIR=../model-xlmroberta-large-all-labels-en-e5-1/
+export TRANSFORMER_BASE_DIR=../model-xlmroberta-base-all-labels-en-e5-1/
 export CORPUS_DIR=./
 
 
