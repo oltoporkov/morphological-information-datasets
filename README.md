@@ -25,6 +25,8 @@ word \t label \t lemma \
 
 The files that contain the shortes edir scripts (SES) to train transformer-based models are presented in the format: \
 word \t SES \
+
 Each new phrase is divided by an empty line, mantaining the CoNLL-U file format .\
 There are files for training and further evaluation out-of-domain. As we also performed the training in the reversed setting, we provide train, dev and test files for both corpora for each presented language (except Basque, as there is only one available corpus in the CoNLL-U file format). \
+
 *-all-labels.txt files contain only one column with all the possible SES labels for transformer models' training, depending on the in-domain and out-of-domain corpora, which is specified in the file name itself.
