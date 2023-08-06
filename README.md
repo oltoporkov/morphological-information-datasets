@@ -10,6 +10,7 @@ This collection of files contains datasets for 6 languages (Russian, Basque, Tur
 ## File source
 The source of our files are the CoNLL-U format files presented in the [SIGMORPHON 2019 Shared task](https://sigmorphon.github.io/sharedtasks/2019/task2/). They contain annotated phrases, where each word is annotated with all corresponding morphological information. During the preprocessing we extract only the wordforms, corresponding lemmas and morphological information necessary to form each label. 
 
+In order to obtain SES labels we use get_ses_affixes.py file, which is the code we adapted using [UDPipe Future original code](https://github.com/CoNLL-UD-2018/UDPipe-Future).
 ## Label structure
 In order to create the labels, we address the [Unimorph schema](https://unimorph.github.io/doc/unimorph-schema.pdf). We form labels of different morphological complexity: \
 **UPOS** label: includes only word´s postag; \
