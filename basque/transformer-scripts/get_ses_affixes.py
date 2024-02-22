@@ -61,14 +61,16 @@ def _gen_lemma_rule(form, lemma, allow_copy):
     return rule
 
 
+
 def get_ud_ses(file, allow_copy):
     input_lines = file.readlines()
     output_lines = []
     for line in input_lines:
         line_elems = line.split('\t')
         if len(line_elems) == 3:
-            ses = _gen_lemma_rule(line_elems[0], line_elems[2], allow_copy)
-            output_lines.append(line_elems[0] + '\t' + line_elems[1] + '\t' + ses)
+            ses = _gen_lemma_rule(line_elems[0], line_elems[2].strip(), allow_copy)
+            #print(ses)
+            output_lines.append(line_elems[0] + '\t' + line_elems[1] + '\t' + ses + '\n')
         elif len(line_elems) == 1:
             output_lines.append("\n")
     return output_lines
