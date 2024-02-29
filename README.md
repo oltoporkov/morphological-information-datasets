@@ -25,7 +25,7 @@ In order to create the labels, we address the [Unimorph schema](https://unimorph
 The files with morphological labels have the following format: \
 word \t label \t lemma 
 
-The files that contain the shortes edit scripts (SES) to train transformer-based models are presented in the format: \
+The files that contain the shortest edit scripts (SES) to train transformer-based models are presented in the format: \
 word \t SES 
 
 Each new phrase is divided by an empty line, mantaining the CoNLL-U file format .\
